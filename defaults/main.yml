@@ -1,0 +1,9 @@
+---
+# defaults file for roles/turnserver
+
+turn_tls_listening_port: 5349
+turn_listening_port: 3478
+turn_udp_relay_min_port: 32769
+turn_udp_relay_max_port: 65535
+
+turn_dhparam_length: 2066

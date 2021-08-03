@@ -1,0 +1,6 @@
+---
+# handlers file for roles/turnserver
+- name: restart coturn
+  ansible.builtin.service:
+    name: coturn
+    state: restarted
