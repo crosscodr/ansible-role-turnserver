@@ -6,4 +6,6 @@ turn_listening_port: 3478
 turn_udp_relay_min_port: 32769
 turn_udp_relay_max_port: 65535
 
+turn_denied_peer_ips: []
+
 turn_dhparam_length: 2066
