@@ -22,7 +22,7 @@
   command: "openssl dhparam -out /etc/ssl/coturn-dh-{{ turn_dhparam_length }}.pem {{ turn_dhparam_length }}"
   args:
     creates: /etc/ssl/coturn-dh-{{ turn_dhparam_length }}.pem
-#  notify: restart coturn
+  notify: restart coturn
 
 - name: deploy config
   template:
@@ -31,4 +31,4 @@
     owner: root
     group: root
     mode: '0644'
-  # notify: restart coturn
+  notify: restart coturn
